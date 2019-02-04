@@ -9,7 +9,13 @@
     </header>
     
     <section id="login">
-    <?php include_once('inc/inc_login.php'); ?>
+    <?php include_once('inc/inc_login.php'); 
+    if(isset($_GET["message"])){
+        echo $_GET["message"];
+    }
+    ?>
+
+
     </section>
 
    
