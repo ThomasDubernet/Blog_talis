@@ -5,7 +5,9 @@
 
 
     if($_POST["pseudo"] === "admin" && $_POST["password"] === "admin"){
-        echo "Bonjour " . $_POST["pseudo"];
+        session_start();
+        $_SESSION["pseudo"] = $_POST["pseudo"];
+        header('Location: admin.php');
     }
 
     // elseif($_POST["pseudo"] != "admin" || $_POST["password"] != "admin"){

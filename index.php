@@ -6,6 +6,7 @@
 <body>
     <header class="text-center">
         <h1>Mon premier authentificator</h1>
+        <nav class="float-right"><a href="disconnect.php">Log Out</a></nav>
     </header>
     
     <section id="login">
