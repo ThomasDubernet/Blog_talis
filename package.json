@@ -1,0 +1,28 @@
+{
+  "name": "homepagefull",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^3.0.1"
+  },
+  "description": "full project using html5 css3 js jquery sass gulp ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}
