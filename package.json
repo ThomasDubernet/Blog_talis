@@ -24,5 +24,13 @@
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasDubernet/Blog_talis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasDubernet/Blog_talis/issues"
+  },
+  "homepage": "https://github.com/ThomasDubernet/Blog_talis#readme"
 }
