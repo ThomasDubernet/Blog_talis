@@ -1,5 +1,7 @@
 
-
+<?php
+    $LoginPage = true;
+?>
 
 <form action="inc/login_post.php" method="post" class=" w-50 m-auto text-center" style="padding-top: 100px;">
     <div class="form-group">

@@ -13,7 +13,7 @@
     else{
         session_start();
         $_SESSION["pseudo"] = $_POST["pseudo"];
-        header('Location: admin.php');
+        header('Location: ../admin.php');
     }
     
     

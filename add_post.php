@@ -1,15 +1,4 @@
-<?php
-session_start();
-if(!isset($_SESSION["pseudo"])){
-    header('Location: ../index.php');
-}
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php include_once("inc_head.php"); ?>
-</head>
+<?php require("inc/inc_head.php"); ?>
 <body>
     <header class="text-center">
     <?php require('nav-bar.php'); ?>

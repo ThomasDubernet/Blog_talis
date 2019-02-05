@@ -1,13 +1,6 @@
-<?php 
-    session_start();
-    require('inc/database.php');
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php include_once("inc/inc_head.php"); ?>
-</head>
+    <?php include("inc/inc_head.php"); ?>
+
 <body>
     <header class="text-center">
         <h1>Mon premier authentificator</h1>
