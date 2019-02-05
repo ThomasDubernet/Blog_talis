@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require('inc/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,6 @@
 </head>
 <body>
     <header class="text-center">
-        <?php require('inc/nav-bar.php'); ?>
         <h1>Mon premier authentificator</h1>
     </header>
     
