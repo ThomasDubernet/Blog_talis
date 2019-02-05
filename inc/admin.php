@@ -12,8 +12,9 @@ if(!isset($_SESSION["pseudo"])){
 </head>
 <body>
     <header class="text-center">
+    <?php require('nav-bar.php'); ?>
         <h1>Ma page Admin</h1>
-        <nav class="float-right"><a href="disconnect.php">Log Out</a></nav>
+        
     </header>
     
 
