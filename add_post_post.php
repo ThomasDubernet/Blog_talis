@@ -1,26 +1,17 @@
 <?php
 session_start();
-require "database.php";
+require "inc/database.php";
 // prepare REQ
 // Execute REQ
 // Redirect to admin + message
 
+$title = $_POST["title"];
+$content = $_POST["content"];
 
-
-
-try {
-    $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql ="INSERT INTO `posts`(`title`, `content`) VALUES ("$_POST["title"]", "$_POST["content"]") ";
-    // use exec() because no results are returned
-    $db->exec($sql);
-    echo "New record created successfully";
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
-
-$db = null;
-?>
+    $sql_req = $db ->prepare("INSERT INTO  posts (title, content) VALUES (:title, :content) ");
+    $sql_req->execute(array(
+        "title" => $title,
+        "content" => $content
+    ));
+    header('Location: admin.php?message=Success to insert');
+  
