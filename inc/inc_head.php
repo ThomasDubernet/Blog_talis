@@ -35,7 +35,7 @@
                 ?>
                                 <li class="card-text">
                                     <?php echo $row["title"]; ?> 
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UpdateModal"><i class="fas fa-dharmachakra"></i></button>
+                                    <a href="edit_article.php?id=<?php echo $row["id"]?>"><i class="fas fa-dharmachakra"></i></a>
                                     <a href="inc/delete.php?id=<?php echo $row["id"]?>"><i class="fas fa-times"></i></a>
                                 </li>
  
